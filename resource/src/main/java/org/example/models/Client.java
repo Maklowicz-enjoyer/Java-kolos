@@ -1,6 +1,6 @@
-package org.example;
+package org.example.models;
 
-public class Klient {
+public class Client {
 
     private String name;
     private String surname;
@@ -14,13 +14,25 @@ public class Klient {
         return surname;
     }
 
+    @Override
+    public String toString() {
+        return "Client{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     public int getAge() {
         return age;
     }
 
-    public Klient(String name, String surname, int age) {
+    public Client(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
         this.age = age;
     }
+
+
+
 }

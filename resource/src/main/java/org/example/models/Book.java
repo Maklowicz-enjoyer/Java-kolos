@@ -1,6 +1,5 @@
-package org.example;
+package org.example.models;
 
-import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Size;
 
 public class Book extends CommonBase {
@@ -10,11 +9,6 @@ public class Book extends CommonBase {
     private String author;
 
     private int minAge;
-
-
-
-
-    // getters
 
 
     public String getBookName() {
@@ -28,7 +22,6 @@ public class Book extends CommonBase {
     public int getMinAge() {
         return minAge;
     }
-
 
     public void setBookName(String bookName) {
         this.bookName = bookName;
@@ -47,4 +40,10 @@ public class Book extends CommonBase {
         this.author = author;
         this.minAge = minAge;
     }
+
+    @Override
+    public String toString() {
+        return "Book name: {%s} author name: {%s} min age: {%d}".formatted(this.bookName, this.author, this.minAge);
+    }
+
 }

@@ -1,0 +1,18 @@
+Client{name='John', surname='Smith', age=20} : [ Book name: {BookName1} author name: {Author1} min age: {10}
+Book name: {BookName2} author name: {Author2} min age: {15}
+Book name: {BookName3} author name: {Author3} min age: {0}
+ ]
+
+ Client{name='John', surname='Black', age=11} : [ Book name: {BookName1} author name: {Author1} min age: {10}
+Book name: {BookName3} author name: {Author3} min age: {0}
+ ]
+
+ Client{name='John', surname='White', age=16} : [ Book name: {BookName1} author name: {Author1} min age: {10}
+Game name: {BG1} minAge: {0} maxAge: {100}
+Game name: {BG2} minAge: {0} maxAge: {100}
+ ]
+
+ Client{name='miek', surname='iwsw', age=30} : [ Book name: {book} author name: {2} min age: {10}
+ ]
+
+ 

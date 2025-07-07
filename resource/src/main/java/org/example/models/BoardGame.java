@@ -1,8 +1,8 @@
-package org.example;
+package org.example.models;
 
 import jakarta.validation.constraints.Size;
 
-public class BoardGame extends CommonBase  {
+public class BoardGame extends CommonBase {
     @Size(max = 120, message = "nazwa gry musi mieć maksymalnie 120 znakow")
     private String gameName;
     private int minAge;
@@ -36,5 +36,11 @@ public class BoardGame extends CommonBase  {
         this.gameName = gameName;
         this.minAge = minAge;
         this.maxAge = maxAge;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Game name: {%s} minAge: {%d} maxAge: {%d}".formatted(this.gameName, this.minAge, this.maxAge);
     }
 }
